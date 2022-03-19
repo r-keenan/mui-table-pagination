@@ -1,6 +1,7 @@
 {
   "desserts": [
     {
+      "itemId": 1,
       "name": "Frozen yoghurt",
       "calories": 159,
       "fat": 6.0,
@@ -8,6 +9,7 @@
       "protein": 4.0
     },
     {
+      "itemId": 2,
       "name": "Ice cream sandwich",
       "calories": 237,
       "fat": 9.0,
@@ -15,13 +17,15 @@
       "protein": 4.3
     },
     {
+      "itemId": 3,
       "name": "Eclair",
-      "name": 262,
+      "calories": 262,
       "fat": 16.0,
       "carbs": 24,
       "protein": 6.0
     },
     {
+      "itemId": 4,
       "name": "Cupcake",
       "calories": 305,
       "fat": 3.7,
@@ -29,6 +33,7 @@
       "protein": 4.3
     },
     {
+      "itemId": 5,
       "name": "Gingerbread",
       "calories": 356,
       "fat": 16.0,
@@ -36,6 +41,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 6,
       "name": "Gingerbread2",
       "calories": 356,
       "fat": 16.0,
@@ -43,6 +49,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 7,
       "name": "Gingerbread3",
       "calories": 356,
       "fat": 16.0,
@@ -50,6 +57,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 8,
       "name": "Gingerbread4",
       "calories": 356,
       "fat": 16.0,
@@ -57,6 +65,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 9,
       "name": "Gingerbread5",
       "calories": 356,
       "fat": 16.0,
@@ -64,6 +73,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 10,
       "name": "Gingerbread6",
       "calories": 356,
       "fat": 16.0,
@@ -71,6 +81,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 11,
       "name": "Gingerbread7",
       "calories": 356,
       "fat": 16.0,
@@ -78,6 +89,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 12,
       "name": "Gingerbread8",
       "calories": 356,
       "fat": 16.0,
@@ -85,6 +97,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 13,
       "name": "Gingerbread9",
       "calories": 356,
       "fat": 16.0,
@@ -92,6 +105,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 14,
       "name": "Gingerbread10",
       "calories": 356,
       "fat": 16.0,
@@ -99,6 +113,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 15,
       "name": "Gingerbread11",
       "calories": 356,
       "fat": 16.0,
@@ -106,6 +121,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 16,
       "name": "Gingerbread12",
       "calories": 356,
       "fat": 16.0,
@@ -113,6 +129,7 @@
       "protein": 3.9
     },
     {
+      "itemId": 17,
       "name": "Gingerbread13",
       "calories": 356,
       "fat": 16.0,

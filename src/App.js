@@ -1,6 +1,5 @@
 import React from "react";
 import PaginatedTable from "./components/PaginatedTable";
-import rows from "./dessertsData.json";
 
 const columns = [
   "Dessert (100g serving)",

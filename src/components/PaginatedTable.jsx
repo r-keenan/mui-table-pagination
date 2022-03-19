@@ -34,61 +34,62 @@ function PaginatedTable({ columns }) {
     rowsPerPage - Math.min(rowsPerPage, rows.length - page * rowsPerPage);
 
   return (
-    <div className="App">
-      <TableContainer component={Paper}>
-        <Table className={classes.table} aria-label="simple table">
-          <TableHead>
-            <TableRow>
-              <TableCell style={{ fontWeight: "bold" }}>
-                {columns.slice(0, 1)}
+    <TableContainer component={Paper}>
+      <Table className={classes.table} aria-label="simple table">
+        <TableHead>
+          <TableRow key={Math.random() * 100}>
+            <TableCell style={{ fontWeight: "bold" }}>
+              {columns.slice(0, 1)}
+            </TableCell>
+            {columns.slice(1).map((columnName) => (
+              <TableCell align="right" style={{ fontWeight: "bold" }}>
+                {columnName}
               </TableCell>
-              {columns.slice(1).map((columnName) => (
-                <TableCell align="right" style={{ fontWeight: "bold" }}>
-                  {columnName}
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {rows
+            .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
+            .map((row) => (
+              <TableRow key={row.itemId}>
+                <TableCell component="th" scope="row">
+                  {row.name}
                 </TableCell>
-              ))}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {rows
-              .slice(page * rowsPerPage, page * rowsPerPage + rowsPerPage)
-              .map((row) => (
-                <TableRow key={row.name}>
-                  <TableCell component="th" scope="row">
-                    {row.name}
-                  </TableCell>
-                  <TableCell align="right" id={row}>
-                    {row.calories}
-                  </TableCell>
-                  <TableCell align="right" id={row}>
-                    {row.fat}
-                  </TableCell>
-                  <TableCell align="right" id={row}>
-                    {row.carbs}
-                  </TableCell>
-                  <TableCell align="right" id={row}>
-                    {row.protein}
-                  </TableCell>
-                </TableRow>
-              ))}
-            {emptyRows > 0 && (
-              <TableRow style={{ height: 53 * emptyRows }}>
-                <TableCell colSpan={6} />
+                <TableCell align="right" id={row}>
+                  {row.calories}
+                </TableCell>
+                <TableCell align="right" id={row}>
+                  {row.fat}
+                </TableCell>
+                <TableCell align="right" id={row}>
+                  {row.carbs}
+                </TableCell>
+                <TableCell align="right" id={row}>
+                  {row.protein}
+                </TableCell>
               </TableRow>
-            )}
-          </TableBody>
-        </Table>
-        <TablePagination
-          rowsPerPageOptions={[5, 20, 50]}
-          component="div"
-          count={rows.length}
-          rowsPerPage={rowsPerPage}
-          page={page}
-          onChangePage={handleChangePage}
-          onChangeRowsPerPage={handleChangeRowsPerPage}
-        />
-      </TableContainer>
-    </div>
+            ))}
+          {emptyRows > 0 && (
+            <TableRow
+              style={{ height: 53 * emptyRows }}
+              key={Math.random() * 100}
+            >
+              <TableCell colSpan={6} />
+            </TableRow>
+          )}
+        </TableBody>
+      </Table>
+      <TablePagination
+        rowsPerPageOptions={[10, 20, 50]}
+        component="div"
+        count={rows.length}
+        rowsPerPage={rowsPerPage}
+        page={page}
+        onPageChange={handleChangePage}
+        onRowsPerPageChange={handleChangeRowsPerPage}
+      />
+    </TableContainer>
   );
 }
 
